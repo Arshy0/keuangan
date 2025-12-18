@@ -22,7 +22,7 @@ def get_worksheet():
     client = gspread.authorize(creds)
     
     # Buka Google Sheet (Pastikan nama file SAMA PERSIS dengan di Google Sheets)
-    sh = client.open("Database Keuangan") 
+    sh = client.open_by_key("1u8yYVDA61RKwRoQb4513T94sLmkpQAmPaTRdTooe65M") 
     return sh.sheet1
 
 try:
